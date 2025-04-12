@@ -1,0 +1,52 @@
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            height: 100vh;
+            background-color: #000;
+        }
+        
+        #root,
+        .main-container,
+        .video-container,
+        .self-video,
+        .self-video video,
+        .other-video video {
+            height: 100%;
+            width: 100%;
+        }
+        
+        .self-video video {
+            object-fit: cover;
+        }
+        
+        .other-video {
+            position: fixed;
+            right: 16px;
+            top: 16px;
+            border-radius: 16px;
+            width: 148px;
+            aspect-ratio: 9/13;
+            background-color: white;
+            overflow: hidden;
+        }
+        
+        .other-video video {
+            object-fit: cover;
+        }
+        
+        .call-btn {
+            position: fixed;
+            bottom: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 16px;
+            background-color: #fff;
+            font-size: 20px;
+            padding: 0.5em 1.5em;
+            border: none;
+            cursor: pointer;
+        }
